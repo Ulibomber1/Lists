@@ -163,6 +163,24 @@ public:
 		return *this;
 	}
 
+	List(List&& rhs)
+		: theSize{ rhs.theSize }, head{ rhs.head }, tail{ rhs.tail }
+	{
+		rhs.theSize = 0;
+		rhs.head = nullptr;
+		rhs.tail = nullptr;
+	}
+
+	// keep for compiler
+	List& operator= (List&& rhs)
+	{
+		std::swap(theSize, rhs.theSize);
+		std::swap(head, rhs.head);
+		std::swap(tail, rhs.tail);
+
+		return *this;
+	}
+
 	// Return iterator representing beginning of list.
 	// Mutator version is first, then accessor version.
 	iterator begin()
@@ -199,6 +217,7 @@ public:
 		return size() == 0;
 	}
 
+	// clear the list by removing all values
 	void clear()
 	{
 		while (!empty())
