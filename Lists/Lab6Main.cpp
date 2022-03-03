@@ -25,7 +25,7 @@ int main()
 
 	cout << endl;
 	cout << "The max subseq sum: " << maxsubsum << endl << endl;
-	cout << "The max subsum squence: " << endl;
+	cout << "The max subsum sequence: " << endl;
 	print_list(maxsubseq);
 	cout << endl << endl;
 

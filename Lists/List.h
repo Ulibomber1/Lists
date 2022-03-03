@@ -248,14 +248,14 @@ public:
 
 	// From DSAAC++:
 	// Insert x before itr.
-	iterator insert(iterator itr, const Object& x)
+	iterator insert(iterator itr, const T & x)
 	{
 		Node* p = itr.current;
 		theSize++;
 		return { p->prev = p->prev->next = new Node{x, p->prev, p} };
 	}
 
-	iterator insert(iterator itr, Object&& x)
+	iterator insert(iterator itr, T && x)
 	{
 		Node* p = itr.current;
 		theSize++;
