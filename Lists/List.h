@@ -63,7 +63,7 @@ public:
 
 		bool operator== (const const_iterator& rhs) const
 		{
-			return current ++ rhs.current;
+			return current == rhs.current;
 		}
 
 		bool operator!= (const const_iterator& rhs) const
@@ -151,7 +151,7 @@ public:
 			push_back(x);
 		*/
 		// more generic:
-		cosnt_iterator itr = rhs.begin();
+		const_iterator itr = rhs.begin();
 		for (; itr != rhs.end(); ++itr)
 			push_back(*itr);
 	}
