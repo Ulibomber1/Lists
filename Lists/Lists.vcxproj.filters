@@ -26,5 +26,8 @@
     <ClCompile Include="RandomV.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
+    <ClCompile Include="Lab6Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
