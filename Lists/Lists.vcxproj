@@ -143,8 +143,10 @@
     <ClInclude Include="RandomV.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Lab6Main.cpp" />
     <ClCompile Include="RandomV.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="lab8_input.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

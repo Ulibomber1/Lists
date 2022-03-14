@@ -246,6 +246,23 @@ public:
 		return *--end();
 	}
 
+	T& nth(int k)
+	{
+		iterator itr1 = itr1.begin();
+		iterator itr2 = itr2.end();
+
+		while (itr1 != k && itr2 != k)
+		{
+			
+
+			itr1++, itr2--
+		}
+		if itr1 == k
+			return *itr1;
+		else
+			return *itr2;
+	}
+
 	// From DSAAC++:
 	// Insert x before itr.
 	iterator insert(iterator itr, const T & x)
