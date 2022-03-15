@@ -254,13 +254,13 @@ public:
 
 		if (k == theSize - 1) 
 		{
-			itr1 = end();
+			itr1 = --end();
 			return *itr1;
 		}
 
 		for (int i = 0; i < k; i++)
 		{
-			//cout << *itr1 << " " << i << endl;
+			//cout << " at " << i << endl;
 			itr1++;
 		}
 		return *itr1;
