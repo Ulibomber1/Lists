@@ -321,6 +321,8 @@ public:
 		erase(--end());
 	}
 
+	typedef T value_type; // For container adaptation
+
 private:
 	int theSize;
 	Node* head;
