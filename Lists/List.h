@@ -248,19 +248,22 @@ public:
 
 	T& nth(int k)
 	{
-		iterator itr1 = itr1.begin();
-		iterator itr2 = itr2.end();
-
-		while (itr1 != k && itr2 != k)
-		{
-			
-
-			itr1++, itr2--
-		}
-		if itr1 == k
+		iterator itr1 = begin();
+		if (k == 0)
 			return *itr1;
-		else
-			return *itr2;
+
+		if (k == theSize - 1) 
+		{
+			itr1 = end();
+			return *itr1;
+		}
+
+		for (int i = 0; i < k; i++)
+		{
+			//cout << *itr1 << " " << i << endl;
+			itr1++;
+		}
+		return *itr1;
 	}
 
 	// From DSAAC++:

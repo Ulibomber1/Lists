@@ -18,12 +18,9 @@
     <ClInclude Include="List.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="RandomV.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="RandomV.cpp">
+    <ClCompile Include="Lab8Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
