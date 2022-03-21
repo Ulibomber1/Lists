@@ -141,12 +141,6 @@
   <ItemGroup>
     <ClInclude Include="List.h" />
   </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="Lab8Main.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="lab8_input.txt" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

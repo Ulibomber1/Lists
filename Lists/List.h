@@ -181,6 +181,8 @@ public:
 		return *this;
 	}
 
+	T& operator[] (int i) {return nth(i);}
+
 	// Return iterator representing beginning of list.
 	// Mutator version is first, then accessor version.
 	iterator begin()
