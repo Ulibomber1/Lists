@@ -143,6 +143,9 @@
     <ClInclude Include="Searching.h" />
     <ClInclude Include="Vector.h" />
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Lab9Main.cpp" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
