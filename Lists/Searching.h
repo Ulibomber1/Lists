@@ -49,11 +49,12 @@ template <typename T>
 int linear_search_L_explore(List<T> lst, const T& target, int& ops)
 {
 	ops = 0;
-	for (int i = 0; i < lst.size; i++)
+	for (int i = 0; i < lst.size() - 1; i++)
 	{
 		ops++;
 		if (lst[i] == target)
 			return i;
+		ops += i; // Remedy, because List operator[] has i ops every time it's used
 	}
 	return -1; // not found
 }
