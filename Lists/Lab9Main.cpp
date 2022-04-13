@@ -33,30 +33,36 @@ int main()
 		int sum_lsvec = 0; // initialize sums for averaging ... 
 		int sum_lslst = 0;
 		int sum_lslst2 = 0;
+		int sum_bsvec = 0;
 
 		for (int i = 0; i < targets.size(); i++)
 		{
 			int ops_lsvec = 0;
 			int ops_lslst = 0;
 			int ops_lslst2 = 0;
+			int ops_bsvec = 0;
 
 			int target = myvec[targets[i]]; // next target to search
 
 			linear_search_V(sortvec, target, ops_lsvec);
 			linear_search_L(sortlist, target, ops_lslst);
 			linear_search_L_explore(sortlist, target, ops_lslst2);
+			binary_search_V(sortvec, target, ops_bsvec);
 
 
 			sum_lsvec += ops_lsvec;
 			sum_lslst += ops_lslst;
 			sum_lslst2 += ops_lslst2;
+			sum_bsvec += ops_bsvec;
+
 		}
 
 		cout << "Averages of " << RUNS << " runs for size " << k << "....." << endl << endl;
 		cout << "linear_search_V: " << sum_lsvec / float(RUNS) << " avg" << endl;
 		cout << "linear_search_L: " << sum_lslst / float(RUNS) << " avg" << endl;
 		cout << "linear_search_Lexp: " << sum_lslst2 / float(RUNS) << " avg" << endl;
-		cout << endl;
+		cout << "binary_search_V: " << sum_bsvec / float(RUNS) << " avg" << endl
+			 << endl;
 
 
 
